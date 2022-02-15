@@ -10,7 +10,7 @@ async function play() {
 
     console.log("Position : ", position);
     let steps = Math.ceil(Math.random() * 6);
-    document.get
+//     document.get
     if (position + steps == 100) {
         console.log("Steps :", steps);
         for (i = position + 1; i <= steps + position; i++) {
