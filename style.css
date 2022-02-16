@@ -1,0 +1,152 @@
+.box {
+    border: 2px solid black;
+    height: 65px;
+    width: 65px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+}
+.game-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.container {
+    height: 100%;
+}
+.game {
+    float: left;
+}
+.results {
+    float: right;
+    margin: 0px 20px 0px 0px;
+    display: flex;
+}
+.card-title{
+    margin-left: 1rem;
+}
+.pawn{
+    position: absolute;
+    margin: 8px 0px 0px 5px;
+    height: 40px;
+}
+.btn-primary{
+    margin-top: 0.5rem;
+}
+.alert{
+    float: right;
+    margin: 20px 17px 0px 0px;
+    height: 6rem;
+    width: 36rem;
+}
+.img1 {
+    z-index: 0;
+    position: absolute;
+    margin: -153px 0px 0px 265px;
+    height: 246px;
+    width: 205px;
+    transform: rotate(314deg);
+}
+.img2 {
+    z-index: 0;
+    position: absolute;
+    margin: -132px 0px 0px -44px;
+    height: 211px;
+    width: 205px;
+    transform: rotate(25deg);
+}
+.img3 {
+    z-index: 0;
+    position: absolute;
+    margin: -401px 0px 0px 281px;
+    height: 572px;
+    width: 247px;
+    transform: rotate(329deg);
+}
+.img4 {
+    z-index: 0;
+    position: absolute;
+    margin: -135px 0px 0px 510px;
+    height: 198px;
+    width: 212px;
+    transform: rotate(0deg);
+}
+.img5 {
+    z-index: 0;
+    position: absolute;
+    margin: -135px 0px 0px 482px;
+    height: 198px;
+    width: 212px;
+    transform: rotate(334deg);
+}
+.img6 {
+    z-index: 0;
+    position: absolute;
+    margin: -255px 0px 0px 40px;
+    height: 448px;
+    width: 212px;
+    transform: rotate(63deg);
+}
+.snake1 {
+    z-index: -1;
+    position: absolute;
+    margin: -156px 0px 0px 484px;
+    height: 186px;
+    width: 212px;
+    transform: rotate(24deg);
+}
+.snake2{
+    z-index: -1;
+    position: absolute;
+    margin: -156px 0px 0px 222px;
+    height: 186px;
+    width: 212px;
+    transform: rotate(24deg);
+}
+.snake3{
+    z-index: -1;
+    position: absolute;
+    margin: -117px 0px 0px 319px;
+    height: 172px;
+    width: 212px;
+    transform: rotate(359deg);
+}
+.snake4{
+    z-index: -1;
+    position: absolute;
+    margin: -309px 0px 0px 0px;
+    height: 355px;
+    width: 251px;
+    transform: rotate(17deg);
+}
+.snake5{
+    z-index: -1;
+    position: absolute;
+    margin: -418px 0px 0px 205px;
+    height: 514px;
+    width: 315px;
+    transform: rotate(9deg);
+}
+.snake6{
+    z-index: -1;
+    position: absolute;
+    margin: -150px 0px 0px 136px;
+    height: 231px;
+    width: 251px;
+    transform: rotate(17deg);
+}
+.snake7{
+    z-index: -1;
+    position: absolute;
+    margin: -555px 0px 0px 34px;
+    height: 335px;
+    width: 315px;
+    transform: rotate(25deg);
+}
+.pawn1,.pawn2{
+    position: absolute;
+    margin: 20px 0px 0px -7px;
+    z-index: 1;
+    height: 40px;
+    width: auto;
+}
