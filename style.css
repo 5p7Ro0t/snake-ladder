@@ -1,3 +1,8 @@
+@media screen and (max-width: 600px) {
+    .results,.alert{
+        float: left;
+    }    
+}
 .box {
     border: 2px solid black;
     height: 65px;
@@ -149,9 +154,4 @@
     z-index: 1;
     height: 40px;
     width: auto;
-}
-@media screen and (max-width: 600px) {
-    .results,.alert{
-        float: left;
-    }    
 }
