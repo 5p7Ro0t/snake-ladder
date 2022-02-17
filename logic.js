@@ -8,19 +8,19 @@ var btn2 = document.getElementById('btn2');
 async function play(pid) {
     btn1.disabled = true;
     btn2.disabled = true;
-    console.log(pid);
+    //console.log(pid);
     var position = 1;
     let box = document.getElementById(pid);
     let id = box.parentElement.getAttribute('id');
     position = Number(id.substring(1));
 
-    console.log("Position : ", position);
+    //console.log("Position : ", position);
     let steps = Math.ceil(Math.random() * 6);
     document.getElementById("res" + pid).innerText = steps
     if (position + steps == 100) {
         btn1.disabled = true;
         btn2.disabled = true;
-        console.log("Steps :", steps);
+        //console.log("Steps :", steps);
         for (i = position + 1; i <= steps + position; i++) {
             await sleep(500);
             move(i, pid);
@@ -48,7 +48,7 @@ async function play(pid) {
         }
     }
     else {
-        console.log("Steps :", steps);
+        //console.log("Steps :", steps);
         let i;
         for (i = position + 1; i <= steps + position; i++) {
             // setInterval(move(i),1000);
@@ -56,7 +56,7 @@ async function play(pid) {
             move(i, pid);
         }
         await sleep(500)
-        console.log(i - 1);
+        //console.log(i - 1);
         let checked = laddercheck(i - 1, pid);
         if (checked == false) {
             snakecheck(i - 1, pid);
@@ -82,7 +82,7 @@ function laddercheck(step, pid) {
             step = ladder[key];
             let currentpos = document.getElementById("b" + step)
             currentpos.innerHTML += `<img src="` + pid + `.png" class="pawn` + pid + `" id="` + pid + `">`
-            console.log("Climbed By Ladder");
+            //console.log("Climbed By Ladder");
             document.getElementById("pos" + pid).innerText = "Position : " + step;
             return true
         }
@@ -97,7 +97,7 @@ function snakecheck(step, pid) {
             step = snake[key];
             let currentpos = document.getElementById("b" + step)
             currentpos.innerHTML += `<img src="` + pid + `.png" class="pawn` + pid + `" id="` + pid + `">`
-            console.log("Eaten By Snake");
+            //console.log("Eaten By Snake");
         }
     }
     document.getElementById("pos" + pid).innerText = "Position : " + step;
@@ -112,7 +112,7 @@ function move(i, pid) {
         }
     }
     currentpos.innerHTML += `<img src="` + pid + `.png" class="pawn` + pid + `" id="` + pid + `">`;
-    console.log(currentpos.childNodes[1]);
+    //console.log(currentpos.childNodes[1]);
 }
 function reset() {
     document.getElementById("pos1").innerHTML = "Position : 0";
